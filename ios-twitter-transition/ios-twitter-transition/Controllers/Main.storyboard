@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NhT-65-G84">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="WNc-68-qW0">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="NhT-65-G84" customClass="ViewController" customModule="ios_twitter_transition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xK4-9b-CA0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xnc-Nc-7pw">
+                                <rect key="frame" x="149" y="318" width="77" height="30"/>
+                                <state key="normal" title="送信画面へ"/>
+                                <connections>
+                                    <action selector="didTapSend:" destination="NhT-65-G84" eventType="touchUpInside" id="Dve-jf-ea6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xnc-Nc-7pw" firstAttribute="centerY" secondItem="xK4-9b-CA0" secondAttribute="centerY" id="5AO-GO-8Rm"/>
+                            <constraint firstItem="xnc-Nc-7pw" firstAttribute="centerX" secondItem="xK4-9b-CA0" secondAttribute="centerX" id="DZe-Ib-ofn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="EEO-Ml-Tab"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hkP-cB-Zf0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="847" y="64"/>
+        </scene>
+    </scenes>
+</document>
